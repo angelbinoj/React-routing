@@ -11,7 +11,7 @@ function Customers() {
   // Fetch customer list
   const fetchCustomers = async () => {
     try {
-      const res = await axios.get("http://localhost:3000/api/customer", {
+      const res = await axios.get("https://backend-basics-kohl.vercel.app/api/customer", {
         headers: { Authorization: `Bearer ${token}` },
         withCredentials: true,
       });
@@ -48,7 +48,7 @@ function Customers() {
       if (editingId) {
         // Update existing customer
         const res = await axios.patch(
-          `http://localhost:3000/api/customer/${editingId}`,
+          `https://backend-basics-kohl.vercel.app/api/customer/${editingId}`,
           payload,
           { headers: { Authorization: `Bearer ${token}` } }
         );
@@ -57,7 +57,7 @@ function Customers() {
       } else {
         // Add new customer
         const res = await axios.post(
-          "http://localhost:3000/api/customer",
+          "https://backend-basics-kohl.vercel.app/api/customer",
           formData,
           { headers: { Authorization: `Bearer ${token}` } }
         );
@@ -73,7 +73,7 @@ function Customers() {
   // Delete customer
   const deleteCustomer = async (id) => {
     try {
-      await axios.delete(`http://localhost:3000/api/customer/${id}`, {
+      await axios.delete(`https://backend-basics-kohl.vercel.app/api/customer/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setCustomers(customers.filter(c => c._id !== id));

@@ -15,7 +15,7 @@ function SignUpPage() {
         e.preventDefault()
 
         try {
-            const { data } = await axios.post('http://localhost:3000/api/user/register', userData,{withCredentials:true})
+            const { data } = await axios.post('https://backend-basics-kohl.vercel.app/api/user/register', userData,{withCredentials:true})
             if (data?.success) {
                 localStorage.setItem('user', JSON.stringify(data.user));
                 navigate('/login')

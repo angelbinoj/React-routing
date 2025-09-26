@@ -15,7 +15,7 @@ function LoginPage() {
         e.preventDefault()
 
         try {
-             const { data } = await axios.post('http://localhost:3000/api/user/login', userData,{withCredentials:true})
+             const { data } = await axios.post('https://backend-basics-kohl.vercel.app/api/user/login', userData,{withCredentials:true})
             if (data?.success) {
                 localStorage.setItem('token', (data.data.token));
                 navigate('/customers')
