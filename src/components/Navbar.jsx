@@ -7,12 +7,8 @@ const Navbar = () => {
         url: "/",
         text: "Home"
     },
-    // {
-    //     url: "about",
-    //     text: "About"
-    // },
     {
-        url: "users",
+        url: "customers",
         text: "View Customers"
     },
     {
@@ -27,7 +23,7 @@ const Navbar = () => {
  
 
   return (
-     <header className='bg-[#cddae5] grid md:grid-cols-2 sm:grid-cols-[20%_80%] lg:grid-cols-2 xl:grid-cols-2 gap-5  w-full h-20 border-b-2 shadow-lg '>
+     <header className='bg-[#cddae5] grid md:grid-cols-2 sm:grid-cols-1 sm:pb-3 md:pb-0 lg:grid-cols-2 xl:grid-cols-2 sm:gap-1 md:gap-5  w-full h-20 border-b-2 shadow-lg '>
             <div className=' h-full  flex justify-around items-center  '>
                 
                 <h2 className='text-center  mx-auto w-fit text-2xl uppercase font-extrabold  text-slate-900'>User Management</h2>

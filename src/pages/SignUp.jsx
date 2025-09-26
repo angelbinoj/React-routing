@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, {  useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function SignUpPage() {
 
@@ -40,8 +40,9 @@ function SignUpPage() {
                 <input className='h-10 ps-4  rounded-md' type="phone" name="phone" placeholder='Phone' onChange={handleChange} autoComplete='off' required />
                 <div className=' mt-5 flex gap-3 justify-around'>
                 <button type='reset' className=' text-slate-100 px-10 py-2 rounded-md bg-slate-800 hover:bg-slate-600'>Cancel</button>
-                <button type='submit' className='text-slate-100 px-10 py-2 rounded-md bg-slate-800 hover:bg-slate-600'>Sign Up</button>
+                <button type='submit' className='text-slate-100 px-10 py-2 rounded-md bg-green-700 hover:bg-green-600'>Sign Up</button>
                 </div>
+                <p>Already a User?<Link to="/login"><span className='text-blue-600 hover:text-blue-500 font-semibold'> Login</span></Link></p>
 
             </form>
         </div>

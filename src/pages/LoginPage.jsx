@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function LoginPage() {
 
@@ -18,7 +18,7 @@ function LoginPage() {
              const { data } = await axios.post('http://localhost:3000/api/user/login', userData,{withCredentials:true})
             if (data?.success) {
                 localStorage.setItem('token', (data.data.token));
-                navigate('/users')
+                navigate('/customers')
             }
             console.log(userData);
 
@@ -38,9 +38,9 @@ function LoginPage() {
                 <div className=' mt-5 flex gap-3 justify-around'>
 
                 <button type='reset' className=' text-slate-100 px-10 py-2 rounded-md bg-slate-800 hover:bg-slate-600'>Cancel</button>
-                <button onClick={handleSubmit} type='submit' className='text-slate-100 px-10 py-2 rounded-md bg-slate-800 hover:bg-slate-600'>Login</button>
+                <button type='submit' className='text-slate-100 px-10 py-2 rounded-md bg-green-700 hover:bg-green-600'>Login</button>
                 </div>
-
+                <p>Not a User?<Link to="/register"><span className='text-blue-600 hover:text-blue-500 font-semibold'> Sign Up</span></Link></p>
             </form>
         </div>
     )
