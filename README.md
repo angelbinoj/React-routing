@@ -23,24 +23,7 @@ This application meets all the assignment requirements:
 * **Design:** Fully responsive user interface built with React components.
 * **Error Handling:** Proper error messages and input validation implemented on both the client and server sides.
 
-## 🛠️ Local Setup Instructions (Client)
 
-To run the frontend locally:
-
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/angelbinoj/React-routing.git](https://github.com/angelbinoj/React-routing.git)
-    cd React-routing
-    ```
-2.  **Install dependencies:**
-    ```bash
-    npm install
-    ```
-3.  **Start the application:**
-    ```bash
-    npm start
-    ```
-    The application will run on `http://localhost:3000`.
 
 ### ⚙️ API Configuration Note
 
