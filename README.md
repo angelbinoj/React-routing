@@ -1,12 +1,49 @@
-# React + Vite
+# 🚀 Entri Elevate: Full Stack CRM Solution (MERN Integration) - CLIENT
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the **Frontend (Client)** of the Full Stack CRM Solution developed using **React.js**.
 
-Currently, two official plugins are available:
+The corresponding **Backend (Server) API** is located in a separate repository (link below).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔗 Project Access & Links
 
-## Expanding the ESLint configuration
+| Component | Type | URL |
+| :--- | :--- | :--- |
+| **Live Frontend App** | **Deployed Website** | **https://react-frontend-ruddy-theta.vercel.app/** |
+| **Backend API Server** | **Live Deployed API** | **https://backend-basics-kohl.vercel.app/api** |
+| **Backend Code Repository** | **GitHub Code** | **https://github.com/angelbinoj/Backend-basics** |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✅ Assignment Checklist & Functionality
+
+This application meets all the assignment requirements:
+
+* **User Authentication:** Includes Registration and Login pages.
+* **CRUD Operations:** Full functionality for managing customer data (Create, Read, Update, Delete).
+* **Design:** Fully responsive user interface built with React components.
+* **Error Handling:** Proper error messages and input validation implemented on both the client and server sides.
+
+## 🛠️ Local Setup Instructions (Client)
+
+To run the frontend locally:
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/angelbinoj/React-routing.git](https://github.com/angelbinoj/React-routing.git)
+    cd React-routing
+    ```
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+3.  **Start the application:**
+    ```bash
+    npm start
+    ```
+    The application will run on `http://localhost:3000`.
+
+### ⚙️ API Configuration Note
+
+The frontend is configured to communicate with the deployed backend at:
+`https://backend-basics-kohl.vercel.app/api`
+If running the backend locally, you may need to adjust the base URL in the client-side environment variables or configuration file.
